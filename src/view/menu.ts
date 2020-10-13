@@ -6,6 +6,6 @@ export const menu = async () => {
     console.log('2.- Area Triangulo')
     console.log('3.- Superficie Rombo')
     console.log('0.- Salir')
-    n = parseInt( await leerTeclado('Opción') )
+    n = parseInt( await leerTeclado('Opción: ') )
     return n
 }
