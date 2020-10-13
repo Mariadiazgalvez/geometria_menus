@@ -1,6 +1,6 @@
 # Proyecto de problemas geometricos
 *perimetro del rectangulo* 
 
-*superficie del triangulo*
+*area del triangulo*
 
 *superficie de un rombo*
