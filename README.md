@@ -3,4 +3,4 @@
 
 *area del triangulo*
 
-*superficie de un rombo*
+*perimetro de un rombo*

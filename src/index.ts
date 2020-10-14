@@ -11,19 +11,17 @@ const main = async () => {
                 break
             case 2:
                 console.log("Area Triangulo")
-                let n1: number
-                let n2: number
-                n1 =  parseInt( await leerTeclado('Dame la altura')) 
-                n2 =  parseInt( await leerTeclado('Dame la base'))
-                console.log(`Su área es: ${triangulo(n1, n2) /2}`)
+                let a: number
+                let b: number
+                a =  parseInt( await leerTeclado('Dame la altura')) 
+                b =  parseInt( await leerTeclado('Dame la base'))
+                console.log(`Su área es: ${triangulo(a, b) /2}`)
                 break
             case 3:
-                console.log("Superficie rombo")
-                let num1: number
-                let num2: number
-                num1 =  parseInt( await leerTeclado('Dame la diagonal menor')) 
-                num2 =  parseInt( await leerTeclado('Dame la diagonal mayor'))
-                console.log(`La superficie del rombo es: ${rombo (num1, num2) /2}`)
+                console.log("Perimetro rombo")
+                let lado: number
+                lado =  parseInt( await leerTeclado('Introduzca el lado')) 
+                console.log(`El perimetro del rombo es: ${rombo (lado) *4}`)
                 break
             case 0:
                 console.log('\nAdios')
@@ -35,15 +33,15 @@ const main = async () => {
     }while (n != 0)
 }
 const rectangulo = async () => {
-    let n1: number
-    let n2: number
-    n1 =  parseInt( await leerTeclado('Dame un lado')) 
-    n2 =  parseInt( await leerTeclado('Dame el otro lado'))
-    console.log(`El perimetro es ${n1 *2 + n2 *2}`)
+    let l1: number
+    let l2: number
+    l1 =  parseInt( await leerTeclado('Dame un lado')) 
+    l2 =  parseInt( await leerTeclado('Dame el otro lado'))
+    console.log(`El perimetro es ${l1 *2 + l2 *2}`)
 }
 
-const triangulo = (n1: number, n2: number): number => n1 * n2 / 2
+const triangulo = (a: number, b: number): number => a * b / 2
 
-const rombo = (num1: number, num2: number): number => num1 * num2 / 2
+const rombo = (lado:number): number => lado * 4
 
 main()

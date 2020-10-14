@@ -4,7 +4,7 @@ export const menu = async () => {
     console.log('\n')
     console.log('1.- Perimetro Rectangulo')
     console.log('2.- Area Triangulo')
-    console.log('3.- Superficie Rombo')
+    console.log('3.- Perimetro Rombo')
     console.log('0.- Salir')
     n = parseInt( await leerTeclado('Opción: ') )
     return n
